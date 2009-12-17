@@ -7,3 +7,12 @@
 .portalMessage.hide {
     display: none;
 }
+
+#searchform .right-col {
+    float: right;
+    margin-left: 2em;
+}
+#searchform .left-col {
+    float: left;
+    margin-right: 2em;
+}

@@ -8,11 +8,26 @@ var print_label = '<span tal:replace="string:Print this"
    i18n:domain="plone"
    i18n:translate=""/>';
 
+
 jq(document).ready(function() {
 
-    var print_action = '<li id="document-action-print">\
-        <a title="" href="javascript:this.print();">' + print_label + '</a></li>';
+    var print_action = '<li id="document-action-print"><a title="" href="javascript:this.print();">' + print_label + '</a></li>';
 
     jq('.documentActions ul').prepend(print_action);
+
+    if (jq('.template-accessibility-info').length == 1) {
+       var portal_root = jq('#portaltab-index_html a').attr('href');
+       var links = jq.ajax(
+          {type: "GET",
+           url: portal_root+"/@@accessibility_fontsize",
+           dataType: "html",
+           success: function(html){
+               jq('.template-accessibility-info h1').after(html);
+          }
+       });
+
+      
+
+    }
 
 });

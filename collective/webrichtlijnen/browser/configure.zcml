@@ -27,4 +27,12 @@
       layer=".interfaces.IThemeSpecific"
       />
 
+  <browser:page
+    for="*"
+    name="accessibility_fontsize"
+    template="accessibility_fontsize.pt"
+    permission="zope.Public"
+   />
+
+
 </configure>

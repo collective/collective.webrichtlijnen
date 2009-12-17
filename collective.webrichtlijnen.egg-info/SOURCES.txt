@@ -21,6 +21,7 @@ collective/webrichtlijnen/skins.zcml
 collective/webrichtlijnen/tests.py
 collective/webrichtlijnen/version.txt
 collective/webrichtlijnen/browser/__init__.py
+collective/webrichtlijnen/browser/accessibility_fontsize.pt
 collective/webrichtlijnen/browser/configure.zcml
 collective/webrichtlijnen/browser/document_actions.pt
 collective/webrichtlijnen/browser/interfaces.py
@@ -42,9 +43,10 @@ collective/webrichtlijnen/profiles/default/skins.xml
 collective/webrichtlijnen/profiles/default/viewlets.xml
 collective/webrichtlijnen/skins/collective_webrichtlijnen_custom_images/CONTENT.txt
 collective/webrichtlijnen/skins/collective_webrichtlijnen_custom_templates/CONTENT.txt
+collective/webrichtlijnen/skins/collective_webrichtlijnen_custom_templates/accessibility-info.pt
+collective/webrichtlijnen/skins/collective_webrichtlijnen_custom_templates/event_view.pt
 collective/webrichtlijnen/skins/collective_webrichtlijnen_custom_templates/global_statusmessage.pt
 collective/webrichtlijnen/skins/collective_webrichtlijnen_custom_templates/main_template.pt
-collective/webrichtlijnen/skins/collective_webrichtlijnen_custom_templates/widgets/file.pt
 collective/webrichtlijnen/skins/collective_webrichtlijnen_styles/CONTENT.txt
 collective/webrichtlijnen/skins/collective_webrichtlijnen_styles/base_properties.props
 collective/webrichtlijnen/skins/collective_webrichtlijnen_styles/webrichtlijnen.js.pt
