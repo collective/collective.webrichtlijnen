@@ -31,6 +31,17 @@ collective/webrichtlijnen/browser/sections.pt
 collective/webrichtlijnen/browser/viewlet.pt
 collective/webrichtlijnen/browser/viewlets.py
 collective/webrichtlijnen/browser/images/README.txt
+collective/webrichtlijnen/browser/portlets/.calendar.pt.swp
+collective/webrichtlijnen/browser/portlets/__init__.py
+collective/webrichtlijnen/browser/portlets/calendar.pt
+collective/webrichtlijnen/browser/portlets/configure.zcml
+collective/webrichtlijnen/browser/portlets/events.pt
+collective/webrichtlijnen/browser/portlets/news.pt
+collective/webrichtlijnen/browser/portlets/overrides.py
+collective/webrichtlijnen/browser/portlets/recent.pt
+collective/webrichtlijnen/browser/portlets/review.pt
+collective/webrichtlijnen/browser/portlets/rss.pt
+collective/webrichtlijnen/browser/portlets/search.pt
 collective/webrichtlijnen/browser/stylesheets/README.txt
 collective/webrichtlijnen/browser/stylesheets/main.css
 collective/webrichtlijnen/profiles/default/actions.xml

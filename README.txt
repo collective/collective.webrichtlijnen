@@ -42,14 +42,12 @@ All websites of the Dutch central goverment need too comply with the Dutch web g
 
 Webrichtlijnen non-complaint HTML code
 --------------------------------------
-There are a few pages in Plone that aren't complaint. The invalid point aren't easy to fix in this package (ie. portlets) or aren't important enough to fix (ie. Plone footer).
+There are a few pages in Plone that aren't complaint. The invalid point aren't easy to fix in this package (ie. file icon widget) or aren't important enough to fix (ie. Plone footer).
 
 * Possible invalid: The Plone footer uses a sub element to show the copyright character. The web guidelines advised to avoid using sup (suberscript) and sub (subscript)element where possible.
 
 * Invalid: The file archetypes has a file icon image that is missing the alt attribute. (http://dev.plone.org/plone/ticket/9948)
 
-* Invalid: Many portlets have a xmlns attribute in in their definition list element. The W3C HTML validator sees this as an error.
- 
 * Invalid: The login portlet has a form without a fieldset (or similar element). no portlets. The W3C HTML validator sees this as an error.
 
 
