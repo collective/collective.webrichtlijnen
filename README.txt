@@ -25,7 +25,7 @@ A description from the webrichtlijnen.nl website:
     quality requirements for the benefit of better websites.
 
 
-This theme is tested using the Dutch web guidelines quick scan. The quick scan checks 47 point of the 125 total guidelines. There 78 point in the guidelines need manual checking. These manual tests involve how the website uses HTML and other relevant techniques, that the content manager(s) are aware of several guidelines. In the doc dir an example is included for all the manual points. The document is named 'niet_toetsbare_webrichtlijnen.odt' and is in Dutch.
+This theme is tested using the Dutch web guidelines quick scan. The quick scan checks 47 points of 125. There 78 points in the guidelines that need manual checking. These manual tests involve how the website uses HTML and other relevant techniques, that the content manager(s) are aware of several guidelines and how processes supporting the guidelines are defined. In the doc dir an example is included for all the manual points. The document is named 'niet_toetsbare_webrichtlijnen.odt' and is in Dutch.
 
 If you're from the Dutch central goverment you can login to see the scan results. Unfortunately local goverments cannot see the complete scan results, they can use the quick scan.
 
