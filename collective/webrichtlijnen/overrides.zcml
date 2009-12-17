@@ -35,5 +35,64 @@
         permission="zope2.View"
         />
 
+    <plone:portlet
+        name="portlets.Calendar"
+        interface="plone.app.portlets.portlets.calendar.ICalendarPortlet"
+        assignment="plone.app.portlets.portlets.calendar.Assignment"
+        renderer=".browser.portlets.overrides.Calendar"
+        addview="plone.app.portlets.portlets.calendar.AddForm"
+        />
 
+    <plone:portlet
+        name="portlets.Events"
+        interface="plone.app.portlets.portlets.events.IEventsPortlet"
+        assignment="plone.app.portlets.portlets.events.Assignment"
+        renderer=".browser.portlets.overrides.Events"
+        addview="plone.app.portlets.portlets.events.AddForm"
+        editview="plone.app.portlets.portlets.events.EditForm"
+        />
+
+    <plone:portlet
+        name="portlets.News"
+        interface="plone.app.portlets.portlets.news.INewsPortlet"
+        assignment="plone.app.portlets.portlets.news.Assignment"
+        renderer=".browser.portlets.overrides.News"
+        addview="plone.app.portlets.portlets.news.AddForm"
+        editview="plone.app.portlets.portlets.news.EditForm"
+        />
+
+    <plone:portlet
+        name="portlets.Recent"
+        interface="plone.app.portlets.portlets.recent.IRecentPortlet"
+        assignment="plone.app.portlets.portlets.recent.Assignment"
+        renderer=".browser.portlets.overrides.Recent"
+        addview="plone.app.portlets.portlets.recent.AddForm"
+        editview="plone.app.portlets.portlets.recent.EditForm"
+
+        />
+    <plone:portlet
+        name="portlets.rss"
+        interface="plone.app.portlets.portlets.rss.IRSSPortlet"
+        assignment="plone.app.portlets.portlets.rss.Assignment"
+        renderer=".browser.portlets.overrides.RSS"
+        addview="plone.app.portlets.portlets.rss.AddForm"
+        editview="plone.app.portlets.portlets.rss.EditForm"
+        />
+
+    <plone:portlet
+        name="portlets.Review"
+        interface="plone.app.portlets.portlets.review.IReviewPortlet"
+        assignment="plone.app.portlets.portlets.review.Assignment"
+        renderer=".browser.portlets.overrides.Review"
+        addview="plone.app.portlets.portlets.review.AddForm"
+        />
+
+    <plone:portlet
+        name="portlets.Search"
+        interface="plone.app.portlets.portlets.search.ISearchPortlet"
+        assignment="plone.app.portlets.portlets.search.Assignment"
+        renderer=".browser.portlets.overrides.Search"
+        addview="plone.app.portlets.portlets.search.AddForm"
+        editview="plone.app.portlets.portlets.search.EditForm"
+        />
 </configure>
