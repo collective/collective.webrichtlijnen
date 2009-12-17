@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+        default_skin="Plone Tableless">
+ <object name="plone_tableless"
+         meta_type="Filesystem Directory View"
+         directory="Products.PloneTableless:skins/plone_tableless"/>
+ <skin-path name="Plone Tableless" based-on="Plone Default">
+  <layer name="plone_tableless"
+         insert-after="custom"/>
+ </skin-path>
+
+</object>

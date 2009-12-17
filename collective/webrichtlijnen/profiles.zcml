@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.webrichtlijnen">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="Webrichtlijnen"
+      directory="profiles/default"
+      description='Extension profile for the "Webrichtlijnen" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>

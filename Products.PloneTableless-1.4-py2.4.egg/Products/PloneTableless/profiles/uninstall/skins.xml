@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<object name="portal_skins" meta_type="Plone Skins Tool" allow_any="False"
+        cookie_persistence="False" default_skin="Plone Default"
+        request_varname="plone_skin">
+ <object name="plone_tableless"
+         meta_type="Filesystem Directory View"
+         directory="Products.PloneTableless:skins/plone_tableless" remove="True"/>
+ <skin-path name="Plone Tableless" based-on="Plone Default" remove="True" />
+</object>

@@ -1,0 +1,18 @@
+1.4
+  - Bugfix release as prefs_main_template and portlet_prefs changed in Plone 3.3
+
+
+1.3
+  - Merging changes in main_template from Plone 3.3
+
+
+1.2
+  - Fix a uninstall issue
+
+
+1.1 
+  - Fix Plone3 depreciation warning (metadata.xml added)
+
+
+0.1
+  - Init Rls

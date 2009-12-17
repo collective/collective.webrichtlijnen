@@ -1,0 +1,39 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:browser="http://namespaces.zope.org/browser">
+
+    <!-- The search box -->
+    <browser:viewlet
+        name="plone.searchbox"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class=".browser.viewlets.SearchBoxViewlet"
+        permission="zope2.View"
+        />
+
+    <!-- document actions -->
+    <browser:viewlet
+        name="plone.abovecontenttitle.documentactions"
+        manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+        class=".browser.viewlets.DocumentActionsViewlet"
+        permission="zope2.View"
+        />
+
+    <!-- The global sections -->
+    <browser:viewlet
+        name="plone.global_sections"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class=".browser.viewlets.GlobalSectionsViewlet"
+        permission="zope2.View"
+        />
+
+    <!-- The personal bar -->
+    <browser:viewlet
+        name="plone.personal_bar"
+        manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+        class=".browser.viewlets.PersonalBarViewlet"
+        permission="zope2.View"
+        />
+
+
+</configure>

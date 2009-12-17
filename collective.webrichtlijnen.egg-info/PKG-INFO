@@ -1,0 +1,45 @@
+Metadata-Version: 1.0
+Name: collective.webrichtlijnen
+Version: 0.1dev
+Summary: A theme product for the Dutch web guidelines.
+Home-page: http://svn.plone.org/svn/collective/
+Author: Kim Chee Leong
+Author-email: leong@gw20e.com
+License: GPL
+Description: Introduction
+        ============
+        
+        This theme is aimed at making Plone complaint with the Dutch web guidelines. (http://www.webrichtlijnen.nl)
+        
+        A description from the webrichtlijnen.nl website:
+        
+        Government bodies and companies are facing the challenge of creating websites that are optimally accessible to people as well as browsers and search engines. The Web Guidelines aid in that process.
+        
+        There are internationally recognized agreements for creating web sites, known as 125 quality requirements standards warrants a significantly better website. The Netherlands government has assembled these international standards in a quality model called the Web Guidelines. This quality model comprises 125 quality requirements for the benefit of better websites.
+        
+        
+        Why aim at these Dutch guidelines and not the W3C standard?
+        ===========================================================
+        
+        dutch govn't websites need to comply to their own standard. webrichtlijnen uses W3C and WAI... and so on...
+        
+        
+        What collective.webrichtlijnen doesn't do
+        =========================================
+        
+        no portlets.
+        
+        Changelog
+        =========
+        
+        0.1 - Unreleased
+        ----------------
+        
+        * Initial release
+        
+        
+Keywords: plone theme web guidelines
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

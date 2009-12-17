@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="Products.PloneTableless">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="Plone Tableless"
+      directory="profiles/default"
+      description='Extension profile for the "Plone Tableless" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="Plone Tableless Uninstall Profile"
+      directory="profiles/uninstall"
+      description='Uninstall Extension profile for the "Plone Tableless" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>

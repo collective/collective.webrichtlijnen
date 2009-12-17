@@ -1,0 +1,18 @@
+<tal:comment tal:replace="nothing">
+  Translate the 'print action' and insert it using
+  javascript in the document actions.
+</tal:comment>
+
+
+var print_label = '<span tal:replace="string:Print this"
+   i18n:domain="plone"
+   i18n:translate=""/>';
+
+jq(document).ready(function() {
+
+    var print_action = '<li id="document-action-print">\
+        <a title="" href="javascript:this.print();">' + print_label + '</a></li>';
+
+    jq('.documentActions ul').prepend(print_action);
+
+});

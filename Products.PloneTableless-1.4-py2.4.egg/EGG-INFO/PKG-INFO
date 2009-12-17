@@ -1,0 +1,50 @@
+Metadata-Version: 1.0
+Name: Products.PloneTableless
+Version: 1.4
+Summary: Plone Tableless provides a completly tableless version of the Plone Default theme
+Home-page: http://plone.org/products/plone-tableless
+Author: Raptus AG (Simon Kaeser)
+Author-email: skaeser@raptus.com
+License: GPL
+Description: Plone Tableless
+        
+        Plone Tableless provides a completly tableless version of
+        the Plone Default theme, and was created because version 3.0
+        does no longer ship with a tableless theme other than NuPlone.
+        
+        The theme was tested on the following browsers:
+        
+        * Firefox 2.0 WinXP/Mac OS X
+        
+        * Camino 1.5.4 Mac OS X
+        
+        * Safari 3.0.4 Mac OS X
+        
+        * Opera 9.0 WinXP
+        
+        * Internet Explorer 6/7 WinXP
+        
+        Changelog
+        =========
+        
+        1.4 - Released
+        --------------
+        
+        * Bugfix release as prefs_main_template and portlet_prefs changed in Plone 3.3
+        
+        1.3 - Released
+        --------------
+        
+        * Merging changes in main_template from Plone 3.3
+        
+        1.2 - Released
+        --------------
+        
+        * Initial release
+        
+        
+Keywords: plone theme tableless
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

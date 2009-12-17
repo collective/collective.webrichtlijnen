@@ -1,0 +1,9 @@
+/* Stylesheet for the 'Webrichtlijnen' Plone theme */
+
+#portal-searchbox .searchSection label {
+    cursor: pointer;
+}
+
+.portalMessage.hide {
+    display: none;
+}
