@@ -33,6 +33,8 @@ Installation
 ------------
 See docs/INSTALL.txt, collective.webrichtlijnen depends on Plone.Tableless
 
+This package is 
+
 Why aim at these Dutch web guidelines and not the W3C standard?
 ---------------------------------------------------------------
 

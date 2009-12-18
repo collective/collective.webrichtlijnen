@@ -8,6 +8,7 @@ from Products.Five import zcml
 from Products.Five import fiveconfigure
 from Products.PloneTestCase import PloneTestCase as ptc
 from Products.PloneTestCase.layer import PloneSite
+
 ptc.setupPloneSite()
 
 import collective.webrichtlijnen
@@ -18,6 +19,8 @@ class TestCase(ptc.PloneTestCase):
         def setUp(cls):
             fiveconfigure.debug_mode = True
             ztc.installPackage(collective.webrichtlijnen)
+            zcml.load_config('configure.zcml', collective.webrichtlijnen)
+            zcml.load_config('tests.zcml', collective.webrichtlijnen.tests)
             fiveconfigure.debug_mode = False
 
         @classmethod
@@ -39,9 +42,9 @@ def test_suite():
 
 
         # Integration tests that use PloneTestCase
-        #ztc.ZopeDocFileSuite(
-        #    'README.txt', package='collective.webrichtlijnen',
-        #    test_class=TestCase),
+        ztc.ZopeDocFileSuite(
+            'webrichtlijnen.txt', package='collective.webrichtlijnen',
+            test_class=TestCase),
 
         #ztc.FunctionalDocFileSuite(
         #    'browser.txt', package='collective.webrichtlijnen',
