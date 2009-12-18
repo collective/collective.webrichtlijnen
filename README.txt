@@ -4,7 +4,7 @@ collective.webrichtlijnen
 
 Introduction
 ------------
-This theme is aimed at making Plone complaint with the Dutch web guidelines. 
+This theme is aimed at making Plone compliant with the Dutch web guidelines. 
 
 Website of the Dutch web guidelines: http://www.webrichtlijnen.nl/english
 
@@ -31,9 +31,8 @@ If you're from the Dutch central goverment you can login to see the scan results
 
 Installation
 ------------
-See docs/INSTALL.txt, collective.webrichtlijnen depends on Plone.Tableless
+See docs/INSTALL.txt, collective.webrichtlijnen depends on Plone.Tableless. Prefered method for installing this theme is using buildout. 
 
-This package is 
 
 Why aim at these Dutch web guidelines and not the W3C standard?
 ---------------------------------------------------------------
