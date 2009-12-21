@@ -38,12 +38,12 @@ Why aim at these Dutch web guidelines and not the W3C standard?
 ---------------------------------------------------------------
 
 
-All websites of the Dutch central goverment need too comply with the Dutch web guidelines in 2010. (http://www.webrichtlijnen.nl/english/background/). Websites of the local goverment (ie. municipalities) have the aim to be complaint in 2010. 
+All websites of the Dutch central goverment need too comply with the Dutch web guidelines in 2010. (http://www.webrichtlijnen.nl/english/background/). Websites of the local goverment (ie. municipalities) have the aim to be compliant in 2010. 
 
 
-Webrichtlijnen non-complaint HTML code
+Webrichtlijnen non-compliant HTML code
 --------------------------------------
-There are a few pages in Plone that aren't complaint. The invalid point aren't easy to fix in this package (ie. file icon widget) or aren't important enough to fix (ie. Plone footer).
+There are a few pages in Plone that aren't compliant. The invalid point aren't easy to fix in this package (ie. file icon widget) or aren't important enough to fix (ie. Plone footer).
 
 * Possible invalid: The Plone footer uses a sub element to show the copyright character. The web guidelines advised to avoid using sup (suberscript) and sub (subscript)element where possible.
 
