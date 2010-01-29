@@ -1,0 +1,54 @@
+=========================
+collective.webrichtlijnen
+=========================
+
+The internals of Plone (CSS, templates, views, portlets etc.) are modified so
+Plone is complaint with the Dutch web guidelines.
+
+Register this as a theme layer in ZCML:
+
+    <interface
+      interface="collective.webrichtlijnen.browser.interfaces.IThemeSpecific"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="Webrichtlijnen"
+      />
+
+The title here must match the name of the theme/skin selection in
+portal_skins.
+
+Let us define the "My Theme" skin selection:
+
+    >>> from Products.CMFCore.utils import getToolByName
+    >>> portal_skins = getToolByName(self.portal, 'portal_skins')
+    >>> default_skin = portal_skins.getDefaultSkin()
+    >>> skin_path = portal_skins._getSelections()[default_skin]
+    >>> portal_skins.addSkinSelection('Webrichtlijnen', skin_path)
+
+In tests/tests.zcml we have registered two version of a view called
+@@layer-test-view. One, for the default skin layer, simply outputs "Default".
+The other outputs "My Theme".
+
+Before we turn on the skin, we will get the default view.
+
+    >>> from Products.Five.testbrowser import Browser
+    >>> browser = Browser()
+    >>> browser.open(self.portal.absolute_url() + '/@@layer-test-view')
+    >>> print browser.contents
+    Default
+
+However, if we turn the skin on, we should see the effects of the marker
+interface being applied.
+
+    >>> portal_skins.default_skin = 'Webrichtlijnen'
+
+    >>> browser.open(self.portal.absolute_url() + '/@@layer-test-view')
+    >>> print browser.contents
+    Webrichtlijnen Theme
+
+And if we switch back:
+
+    >>> portal_skins.default_skin = 'Plone Default'
+
+    >>> browser.open(self.portal.absolute_url() + '/@@layer-test-view')
+    >>> print browser.contents
+    Default

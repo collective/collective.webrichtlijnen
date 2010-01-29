@@ -2,9 +2,6 @@
 <object name="portal_skins" allow_any="False" cookie_persistence="False"
    default_skin="Webrichtlijnen">
 
- <object name="collective_webrichtlijnen_custom_images"
-    meta_type="Filesystem Directory View"
-    directory="collective.webrichtlijnen:skins/collective_webrichtlijnen_custom_images"/>
  <object name="collective_webrichtlijnen_custom_templates"
     meta_type="Filesystem Directory View"
     directory="collective.webrichtlijnen:skins/collective_webrichtlijnen_custom_templates"/>
@@ -13,8 +10,6 @@
     directory="collective.webrichtlijnen:skins/collective_webrichtlijnen_styles"/>
 
  <skin-path name="Webrichtlijnen" based-on="Plone Tableless">
-  <layer name="collective_webrichtlijnen_custom_images"
-     insert-after="custom"/>
   <layer name="collective_webrichtlijnen_custom_templates"
      insert-after="collective_webrichtlijnen_custom_images"/>
   <layer name="collective_webrichtlijnen_styles"

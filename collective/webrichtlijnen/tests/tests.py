@@ -1,7 +1,4 @@
 import unittest
-
-from zope.testing import doctestunit
-from zope.component import testing
 from Testing import ZopeTestCase as ztc
 
 from Products.Five import zcml
@@ -31,24 +28,9 @@ class TestCase(ptc.PloneTestCase):
 def test_suite():
     return unittest.TestSuite([
 
-        # Unit tests
-        #doctestunit.DocFileSuite(
-        #    'README.txt', package='collective.webrichtlijnen',
-        #    setUp=testing.setUp, tearDown=testing.tearDown),
-
-        #doctestunit.DocTestSuite(
-        #    module='collective.webrichtlijnen.mymodule',
-        #    setUp=testing.setUp, tearDown=testing.tearDown),
-
-
-        # Integration tests that use PloneTestCase
-        ztc.ZopeDocFileSuite(
+        ztc.FunctionalDocFileSuite(
             'webrichtlijnen.txt', package='collective.webrichtlijnen',
             test_class=TestCase),
-
-        #ztc.FunctionalDocFileSuite(
-        #    'browser.txt', package='collective.webrichtlijnen',
-        #    test_class=TestCase),
 
         ])
 

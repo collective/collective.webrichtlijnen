@@ -33,7 +33,6 @@ Installation
 ------------
 See docs/INSTALL.txt, collective.webrichtlijnen depends on Plone.Tableless. Prefered method for installing this theme is using buildout. 
 
-
 Why aim at these Dutch web guidelines and not the W3C standard?
 ---------------------------------------------------------------
 
@@ -49,6 +48,6 @@ There are a few pages in Plone that aren't compliant. The invalid point aren't e
 
 * Invalid: The file archetypes has a file icon image that is missing the alt attribute. (http://dev.plone.org/plone/ticket/9948)
 
-* Invalid: The login portlet has a form without a fieldset (or similar element). no portlets. The W3C HTML validator sees this as an error.
+* Invalid: The login portlet has a form without a fieldset (or similar element). The W3C HTML validator sees this as an error.
 
 
