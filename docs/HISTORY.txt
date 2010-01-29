@@ -1,5 +1,15 @@
 Changelog
 =========
+1.0 - Final
+-----------
+* Did come cleaning up and ixed the doctests 
+
+0.2 Beta
+--------
+* A theme that makes Plone webrichtlijnen complaint
+* Several overrides for viewlets and portlets for webrichtlijnen
+* Customized several templates for webrichtlijnen
+* The specific changes are commented in the code using the phrase 'Webrichtlijnen changes'.
 
 0.1 - Unreleased
 ----------------
