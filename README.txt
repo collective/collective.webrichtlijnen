@@ -36,7 +36,6 @@ See docs/INSTALL.txt, collective.webrichtlijnen depends on Plone.Tableless. Pref
 Why aim at these Dutch web guidelines and not the W3C standard?
 ---------------------------------------------------------------
 
-
 All websites of the Dutch central goverment need too comply with the Dutch web guidelines in 2010. (http://www.webrichtlijnen.nl/english/background/). Websites of the local goverment (ie. municipalities) have the aim to be compliant in 2010. 
 
 
@@ -50,4 +49,6 @@ There are a few pages in Plone that aren't compliant. The invalid point aren't e
 
 * Invalid: The login portlet has a form without a fieldset (or similar element). The W3C HTML validator sees this as an error.
 
-
+Sponsor
+-------
+The development of this theme is funded by http://gemeente.groningen.nl/ Gemeente Groningen (municipality of Groningen).
