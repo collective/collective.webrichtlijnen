@@ -16,3 +16,9 @@
     float: left;
     margin-right: 2em;
 }
+
+#content form.searchPage fieldset {
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+}

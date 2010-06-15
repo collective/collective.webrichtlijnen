@@ -34,18 +34,7 @@ recipe to manage your project, you can do this:
     ...
     eggs =
         ...
-        Products.PloneTableless
         collective.webrichtlijnen
-       
-* Tell the plone.recipe.zope2instance recipe to install a ZCML slug:
-
-    [instance]
-    recipe = plone.recipe.zope2instance
-    ...
-    zcml =
-        Products.PloneTableless
-        collective.webrichtlijnen
-        collective.webrichtlijnen-overrides
       
 * Re-run buildout, e.g. with:
 

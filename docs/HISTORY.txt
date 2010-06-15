@@ -1,8 +1,13 @@
 Changelog
 =========
+
+1.1 - Branch for Plone 4
+------------------------
+*
+
 1.0 - Final
 -----------
-* Did come cleaning up and ixed the doctests 
+* Did come cleaning up and fixed the doctests
 
 0.2 Beta
 --------
