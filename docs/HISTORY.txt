@@ -4,7 +4,7 @@ Changelog
 1.1 (2010-06-15)
 ----------------
 * Webrichtlijnen theme for Plone 4
-* Uses Subburst Theme as base theme
+* Uses Sunburst Theme as base theme
 * Using z3c.autoinclude, no need for zcml slug in buildout
 * Updated all overridden views/templates for Plone 4
 * Not backwards compatible with Plone 4. Use version 1.0 for Plone 3.
@@ -15,8 +15,8 @@ Changelog
 
 0.2 (2009-12-17)
 ----------------
-* A theme that makes Plone webrichtlijnen complaint
-* Uses Plone Tableless theme as base theme.
+* A theme that makes Plone 3 webrichtlijnen complaint
+* Uses Plone Tableless Theme as base theme.
 * Several overrides for viewlets and portlets for webrichtlijnen
 * Customized several templates for webrichtlijnen
 * The specific changes are commented in the code using the phrase 'Webrichtlijnen changes'.
