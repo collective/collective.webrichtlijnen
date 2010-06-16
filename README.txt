@@ -39,9 +39,10 @@ use the quick scan.
 
 Installation
 ------------
-See docs/INSTALL.txt, collective.webrichtlijnen uses the Sunburst Theme. Prefered
-method for installing this theme is using buildout. 
-
+See docs/INSTALL.txt for a comprehensive explanation. Prefered method for
+installing this theme is using buildout. If you're installing this theme on
+Plone 3 please read the doc/INSTALL.txt. Don't say I didn't told you! For Plone
+3 you need the Plone.Tableless egg, some zcml slugs and version pinning.
 
 Why aim at these Dutch web guidelines and not the W3C standard?
 ---------------------------------------------------------------
