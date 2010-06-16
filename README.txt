@@ -34,7 +34,7 @@ Installation
 See docs/INSTALL.txt for a comprehensive explanation. Prefered method for
 installing this theme is using buildout.
 
-* Add ``collective.webrichtlijnen`` to the list of eggs to install, e.g.:
+* Add ``collective.webrichtlijnen`` to the list of eggs to install, e.g.::
 
     [buildout]
     ...
@@ -43,15 +43,17 @@ installing this theme is using buildout.
         Products.PloneTableless
         collective.webrichtlijnen
 
+* Tell the plone.recipe.zope2instance recipe to install a ZCML slug::
+
     zcml =
         ...
         Products.PloneTableless
         collective.webrichtlijnen
 
-* Pin down the correct version for Plone 3
+* Pin down the correct version for Plone 3::
 
     [versions]
-    collective.webrichtlijnen = 1.0.1 # only for Plone 3
+    collective.webrichtlijnen = 1.0.1
 
 Why aim at these Dutch web guidelines and not the W3C standard?
 ---------------------------------------------------------------
