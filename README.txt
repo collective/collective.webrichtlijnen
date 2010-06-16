@@ -34,16 +34,30 @@ included for all the manual points. The document is named
 'niet_toetsbare_webrichtlijnen.odt' and is in Dutch.
 
 If you're from the Dutch central goverment you can login to see the scan results.
-Unfortunately local goverments cannot see the complete scan results, they can use the quick scan.
+Unfortunately local goverments cannot see the complete scan results, they can
+use the quick scan.
 
-Plone versions and default themes
----------------------------------
 
+Plone versions and themes
+-------------------------
+The webrichtlijnen theme works with Plone 3 and 4. When using the webrichtlijnen
+theme the visual appearance of Plone isn't altered. The table below shows which
+default Plone theme is used as base and which webrichtlijnen theme version works
+with a specific version of Plone/
+
++---------------+---------------+-----------------+
+| Theme version | Plone version | Plone theme     |
++===============+===============+=================+
+| 1.0           | 3.x           | Plone tableless |
++---------------+---------------+-----------------+
+| 1.1           | 4.x           | Sunburst theme  |
++---------------+---------------+-----------------+
 
 Installation
 ------------
 See docs/INSTALL.txt, collective.webrichtlijnen uses the Sunburst Theme. Prefered
 method for installing this theme is using buildout. 
+
 
 Why aim at these Dutch web guidelines and not the W3C standard?
 ---------------------------------------------------------------
@@ -54,7 +68,7 @@ of the local goverment (ie. municipalities) have the aim to be compliant in 2010
 
 Webrichtlijnen compliant HTML/CSS code that is marked as invalid
 ----------------------------------------------------------------
-The following point are marked as invalid by the quick scan. When a manual
+The following points are marked as invalid by the quick scan. When a manual
 check is done these points are invalid.
 
 * Invalid (R-pd.1.1): The use of a width attribute is only allowed with images, the quick scan finds a width attribute. This is not correct no width attribute is used.
@@ -67,10 +81,10 @@ Webrichtlijnen non-compliant HTML/CSS code
 The following points are marked as invalid by the quick scan.
 
 * Invalid (R-pd.2.6): Plone uses CSS3 to create rounded corners. The CSS used fails when using the W3C CSS check. The use of CSS3 is complementary, where this is applied the pages are still visisble with a browser that uses CSS2.1
-* Possible invalid (R-pd.3.9: The Plone footer uses a sub element to show the copyright character. The web guidelines advised to avoid using sup (suberscript) and sub (subscript)element where possible.
+* Possible invalid (R-pd.3.9): The Plone footer uses a sub element to show the copyright character. The web guidelines advised to avoid using sup (suberscript) and sub (subscript)element where possible.
 
 
 Sponsor
 -------
-The development of this theme is funded by http://gemeente.groningen.nl/ Gemeente
+The development of this theme is funded by http://gemeente.groningen.nl/ - Gemeente
 Groningen (municipality of Groningen).

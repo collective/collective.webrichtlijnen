@@ -25,7 +25,7 @@ setup(name='collective.webrichtlijnen',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'Plone >= 4.0a',
+          'Plone > 4.0a',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
