@@ -31,7 +31,27 @@ If you're from the Dutch central goverment you can login to see the scan results
 
 Installation
 ------------
-See docs/INSTALL.txt, collective.webrichtlijnen depends on Plone.Tableless. Prefered method for installing this theme is using buildout. 
+See docs/INSTALL.txt for a comprehensive explanation. Prefered method for
+installing this theme is using buildout.
+
+* Add ``collective.webrichtlijnen`` to the list of eggs to install, e.g.:
+
+    [buildout]
+    ...
+    eggs =
+        ...
+        Products.PloneTableless
+        collective.webrichtlijnen
+
+    zcml =
+        ...
+        Products.PloneTableless
+        collective.webrichtlijnen
+
+* Pin down the correct version for Plone 3
+
+    [versions]
+    collective.webrichtlijnen = 1.0.1 # only for Plone 3
 
 Why aim at these Dutch web guidelines and not the W3C standard?
 ---------------------------------------------------------------

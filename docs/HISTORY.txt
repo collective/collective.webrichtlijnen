@@ -1,18 +1,22 @@
 Changelog
 =========
-1.0 - Final
------------
-* Did come cleaning up and ixed the doctests 
 
-0.2 Beta
---------
-* A theme that makes Plone webrichtlijnen complaint
+1.0.1 (2010-06-16)
+------------------
+* Updated readme and install document. Version pinning is required if this theme is installed under Plone 3
+
+1.0 (2010-02-01)
+----------------
+* Did come cleaning up and fixed the doctests
+
+0.2 (2009-12-17)
+----------------
+* A theme that makes Plone 3 webrichtlijnen complaint
+* Uses Plone Tableless Theme as base theme.
 * Several overrides for viewlets and portlets for webrichtlijnen
 * Customized several templates for webrichtlijnen
 * The specific changes are commented in the code using the phrase 'Webrichtlijnen changes'.
 
 0.1 - Unreleased
 ----------------
-
 * Initial release
-

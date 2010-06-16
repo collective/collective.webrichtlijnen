@@ -1,32 +1,7 @@
 collective.webrichtlijnen Installation
 --------------------------------------
 
-To install collective.webrichtlijnen into the global Python environment (or a workingenv),
-using a traditional Zope 2 instance, you can do this:
-
-* When you're reading this you have probably already run 
-  ``easy_install collective.webrichtlijnen``. Find out how to install setuptools
-  (and EasyInstall) here:
-  http://peak.telecommunity.com/DevCenter/EasyInstall
-
-* If you are using Zope 2.9 (not 2.10), get `pythonproducts`_ and install it 
-  via::
-
-    python setup.py install --home /path/to/instance
-
-into your Zope instance.
-
-* Create a file called ``collective.webrichtlijnen-configure.zcml`` in the
-  ``/path/to/instance/etc/package-includes`` directory.  The file
-  should only contain this::
-
-    <include package="collective.webrichtlijnen" />
-
-.. _pythonproducts: http://plone.org/products/pythonproducts
-
-
-Alternatively, if you are using zc.buildout and the plone.recipe.zope2instance
-recipe to manage your project, you can do this:
+Use zc.buildout to install this theme
 
 * Add ``collective.webrichtlijnen`` to the list of eggs to install, e.g.:
 
@@ -46,6 +21,11 @@ recipe to manage your project, you can do this:
         Products.PloneTableless
         collective.webrichtlijnen
         collective.webrichtlijnen-overrides
+
+* Pin down the correct version if you're using Plone 3*
+
+    [versions]
+    collective.webrichtlijnen = 1.0.1 # only for Plone 3
       
 * Re-run buildout, e.g. with:
 
@@ -55,5 +35,3 @@ recipe to manage your project, you can do this:
     - Install Plone Tableless
     - Install collective.webrichtlijnen
         
-You can skip the ZCML slug if you are going to explicitly include the package
-from another package's configure.zcml file.
