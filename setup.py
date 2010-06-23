@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0.1'
+version = '1.1'
 
 setup(name='collective.webrichtlijnen',
       version=version,
@@ -14,10 +14,10 @@ setup(name='collective.webrichtlijnen',
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
-      keywords='plone theme web guidelines',
+      keywords='plone theme dutch web guidelines webrichtlijnen',
       author='Kim Chee Leong',
       author_email='leong@gw20e.com',
-      url='http://svn.plone.org/svn/collective/',
+      url='http://pypi.python.org/pypi/collective.webrichtlijnen/',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['collective'],
@@ -25,6 +25,7 @@ setup(name='collective.webrichtlijnen',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'Plone > 4.0a',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
@@ -35,6 +36,12 @@ setup(name='collective.webrichtlijnen',
 
       [egg_info.writers]
       paster_plugins.txt = setuptools.command.egg_info:write_arg
+
+      [z3c.autoinclude.plugin]
+      target = plone
+
       """,
+      setup_requires=["PasteScript"],
+
       paster_plugins = ["ZopeSkel"],
       )

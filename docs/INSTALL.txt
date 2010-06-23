@@ -1,7 +1,29 @@
 collective.webrichtlijnen Installation
 --------------------------------------
 
-Use zc.buildout to install this theme
+Use zc.buildout to install this theme.
+
+* Add ``collective.webrichtlijnen`` to the list of eggs to install, e.g.:
+
+    [buildout]
+    ...
+    eggs =
+        ...
+        collective.webrichtlijnen
+      
+* Re-run buildout, e.g. with:
+
+    $ ./bin/buildout
+
+* Start Zope and in your Plone instance:
+    - Install collective.webrichtlijnen
+        
+You can skip the ZCML slug if you are going to explicitly include the package
+from another package's configure.zcml file.
+
+
+Although the theme in this python egg is for Plone 4, here are the install
+instructions for Plone 3.
 
 * Add ``collective.webrichtlijnen`` to the list of eggs to install, e.g.:
 
@@ -11,7 +33,7 @@ Use zc.buildout to install this theme
         ...
         Products.PloneTableless
         collective.webrichtlijnen
-       
+
 * Tell the plone.recipe.zope2instance recipe to install a ZCML slug:
 
     [instance]
@@ -26,12 +48,10 @@ Use zc.buildout to install this theme
 
     [versions]
     collective.webrichtlijnen = 1.0.1 # only for Plone 3
-      
+
 * Re-run buildout, e.g. with:
 
     $ ./bin/buildout
 
 * Start Zope and in your Plone instance:
     - Install Plone Tableless
-    - Install collective.webrichtlijnen
-        

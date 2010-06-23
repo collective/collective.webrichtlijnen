@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <import-steps>
   <import-step id="collective.webrichtlijnen.various"
-               version="20091211-01"
+               version="20100614-01"
                handler="collective.webrichtlijnen.setuphandlers.setupVarious"
                title="Webrichtlijnen: miscellaneous import steps">
     <dependency step="skins" />

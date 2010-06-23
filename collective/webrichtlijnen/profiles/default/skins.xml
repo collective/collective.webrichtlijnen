@@ -9,9 +9,9 @@
     meta_type="Filesystem Directory View"
     directory="collective.webrichtlijnen:skins/collective_webrichtlijnen_styles"/>
 
- <skin-path name="Webrichtlijnen" based-on="Plone Tableless">
+ <skin-path name="Webrichtlijnen" based-on="Sunburst Theme">
   <layer name="collective_webrichtlijnen_custom_templates"
-     insert-after="collective_webrichtlijnen_custom_images"/>
+     insert-after="custom"/>
   <layer name="collective_webrichtlijnen_styles"
      insert-after="collective_webrichtlijnen_custom_templates"/>
  </skin-path>

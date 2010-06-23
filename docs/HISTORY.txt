@@ -1,6 +1,13 @@
 Changelog
 =========
 
+1.1 (2010-06-16)
+----------------
+* Webrichtlijnen theme for Plone 4
+* Uses Sunburst Theme as base theme
+* Updated all overridden views/templates for Plone 4
+* Not backwards compatible with Plone 4. Use version 1.0 for Plone 3.
+
 1.0.1 (2010-06-16)
 ------------------
 * Updated readme and install document. Version pinning is required if this theme is installed under Plone 3
