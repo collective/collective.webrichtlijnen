@@ -1,5 +1,8 @@
 Changelog
 =========
+1.1.1 (2010-10-26)
+------------------
+* The 1.1 release on pypi and plone.org is corrupt/has missing files. 
 
 1.1 (2010-06-16)
 ----------------
