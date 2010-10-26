@@ -100,9 +100,9 @@ with a specific version of Plone/
 +---------------+---------------+-----------------+
 | Theme version | Plone version | Plone theme     |
 +===============+===============+=================+
-| 1.0           | 3.x           | Plone tableless |
+| 1.0.x         | 3.x           | Plone tableless |
 +---------------+---------------+-----------------+
-| 1.1           | 4.x           | Sunburst theme  |
+| 1.1.x         | 4.x           | Sunburst theme  |
 +---------------+---------------+-----------------+
 
 Sponsor
