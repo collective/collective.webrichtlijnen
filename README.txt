@@ -63,7 +63,7 @@ Plone 3 please read the doc/INSTALL.txt. Don't say I didn't told you! For Plone
 * Pin down the correct version for Plone 3::
 
     [versions]
-    collective.webrichtlijnen = 1.0.1
+    collective.webrichtlijnen = 1.0.2
 
 Why aim at these Dutch web guidelines and not the W3C standard?
 ---------------------------------------------------------------
