@@ -1,7 +1,10 @@
 Changelog
 =========
 
-1.1.2 (unreleased)
+1.1.3 (unreleased)
+------------------
+
+1.1.2 (2011-06-21)
 ------------------
 
 - No longer use z3c.autoinclude because overrides might conflict 
@@ -21,7 +24,7 @@ Changelog
 * Updated all overridden views/templates for Plone 4
 * Not backwards compatible with Plone 4. Use version 1.0 for Plone 3.
 
-1.0.2 - 2010-10-26
+1.0.2 (2010-10-26)
 ------------------
 * Fixed skin order
 * No theme specific browser resources, this theme is usable as base for other
