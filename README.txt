@@ -37,12 +37,11 @@ If you're from the Dutch central goverment you can login to see the scan results
 Unfortunately local goverments cannot see the complete scan results, they can
 use the quick scan.
 
-Installation
-------------
-See docs/INSTALL.txt for a comprehensive explanation. Prefered method for
-installing this theme is using buildout. If you're installing this theme on
-Plone 3 please read the doc/INSTALL.txt. Don't say I didn't told you! For Plone
-3 you need the Plone.Tableless egg, some zcml slugs and version pinning.
+Installation (short version)
+----------------------------
+
+See below for "Full installation notes", notably the part on how to use this
+product with a custom theme.
 
 * Add ``collective.webrichtlijnen`` to the list of eggs to install, e.g.::
 
@@ -60,10 +59,9 @@ Plone 3 please read the doc/INSTALL.txt. Don't say I didn't told you! For Plone
         Products.PloneTableless
         collective.webrichtlijnen
 
-* Pin down the correct version for Plone 3::
-
-    [versions]
-    collective.webrichtlijnen = 1.0.2
+  We consciously do not use z3c.autoinclude here, because we have an
+  `overrides.zcml` file here, which might conflict with any overrides you have
+  defined in your own theme product, causing the server to not start.
 
 Why aim at these Dutch web guidelines and not the W3C standard?
 ---------------------------------------------------------------

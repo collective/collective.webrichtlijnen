@@ -24,7 +24,6 @@
   <browser:resourceDirectory
       name="collective.webrichtlijnen.stylesheets"
       directory="stylesheets"
-      layer=".interfaces.IThemeSpecific"
       />
 
   <browser:page

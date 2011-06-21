@@ -7,6 +7,7 @@ setup(name='collective.webrichtlijnen',
       version=version,
       description="A theme product for the Dutch web guidelines.",
       long_description=open("README.txt").read() + "\n" +
+                       open(os.path.join("docs", "INSTALL.txt")).read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
@@ -30,15 +31,6 @@ setup(name='collective.webrichtlijnen',
       ],
       entry_points="""
       # -*- Entry points: -*-
-
-      [distutils.setup_keywords]
-      paster_plugins = setuptools.dist:assert_string_list
-
-      [egg_info.writers]
-      paster_plugins.txt = setuptools.command.egg_info:write_arg
-
-      [z3c.autoinclude.plugin]
-      target = plone
 
       """,
       setup_requires=["PasteScript"],

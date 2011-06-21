@@ -1,9 +1,12 @@
-collective.webrichtlijnen Installation
---------------------------------------
+Full installation notes
+-----------------------
 
-Use zc.buildout to install this theme.
+Prefered method for installing this theme is using buildout. 
 
-* Add ``collective.webrichtlijnen`` to the list of eggs to install, e.g.:
+Plone 4.0 and up
+================
+
+* Add ``collective.webrichtlijnen`` to the list of eggs to install, e.g.::
 
     [buildout]
     ...
@@ -11,21 +14,22 @@ Use zc.buildout to install this theme.
         ...
         collective.webrichtlijnen
       
-* Re-run buildout, e.g. with:
+* Re-run buildout, e.g. with::
 
     $ ./bin/buildout
 
-* Start Zope and in your Plone instance:
-    - Install collective.webrichtlijnen
+* Start Zope, and in your Plone instance, install `collective.webrichtlijnen`
         
 You can skip the ZCML slug if you are going to explicitly include the package
 from another package's configure.zcml file.
 
+Plone 3
+=======
 
 Although the theme in this python egg is for Plone 4, here are the install
 instructions for Plone 3.
 
-* Add ``collective.webrichtlijnen`` to the list of eggs to install, e.g.:
+* Add ``collective.webrichtlijnen`` to the list of eggs to install, e.g.::
 
     [buildout]
     ...
@@ -34,7 +38,7 @@ instructions for Plone 3.
         Products.PloneTableless
         collective.webrichtlijnen
 
-* Tell the plone.recipe.zope2instance recipe to install a ZCML slug:
+* Tell the plone.recipe.zope2instance recipe to install a ZCML slug::
 
     [instance]
     recipe = plone.recipe.zope2instance
@@ -44,14 +48,39 @@ instructions for Plone 3.
         collective.webrichtlijnen
         collective.webrichtlijnen-overrides
 
-* Pin down the correct version if you're using Plone 3*
+* Pin down the correct version if you're using Plone 3*::
 
     [versions]
-    collective.webrichtlijnen = 1.0.1 # only for Plone 3
+    collective.webrichtlijnen = 1.0.2 # only for Plone 3
 
-* Re-run buildout, e.g. with:
+* Re-run buildout, e.g. with::
 
     $ ./bin/buildout
 
-* Start Zope and in your Plone instance:
-    - Install Plone Tableless
+* Start Zope, and in your Plone instance install Plone Tableless
+
+Usage with your custom theme
+============================
+
+You will probably want to use this product with a custom theme. The recommended
+way to do this is to base your theme on `Webrichtlijnen`. That way, the skin
+layers will also be available in your theme, without having to register
+the skin layer for all themes. Here's an example `skins.xml`::
+
+
+  <?xml version="1.0"?>
+
+  <object name="portal_skins" allow_any="False" cookie_persistence="False"
+     default_skin="My Theme">
+
+   <object name="my_theme_templates"
+      meta_type="Filesystem Directory View"
+      directory="my.theme:skins/my_theme_templates"/>
+   <skin-path name="My Theme" based-on="Webrichtlijnen">
+    <layer name="my_theme_templates"
+       insert-after="custom"/>
+   </skin-path>
+
+  </object>
+
+
