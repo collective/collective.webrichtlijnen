@@ -13,13 +13,6 @@
   <!-- Viewlets registration -->
   <!-- Zope 3 browser resources -->
 
-  <!-- Resource directory for images -->
-  <browser:resourceDirectory
-      name="collective.webrichtlijnen.images"
-      directory="images"
-      layer=".interfaces.IThemeSpecific"
-      />
-
   <!-- Resource directory for stylesheets -->
   <browser:resourceDirectory
       name="collective.webrichtlijnen.stylesheets"

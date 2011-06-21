@@ -8,9 +8,7 @@ This theme is aimed at making Plone compliant with the Dutch web guidelines.
 
 Website of the Dutch web guidelines: http://www.webrichtlijnen.nl/english
 
-A description from the webrichtlijnen.nl website:
-
-::
+A description from the webrichtlijnen.nl website::
 
     Government bodies and companies are facing the challenge of 
     creating websites that are optimally accessible to people as 

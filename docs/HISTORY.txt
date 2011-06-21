@@ -4,6 +4,9 @@ Changelog
 1.1.3 (unreleased)
 ------------------
 
+- Documentation update: How to include ZCML slug, also for overrides
+- Remove unused `browser/images` directory
+
 1.1.2 (2011-06-21)
 ------------------
 

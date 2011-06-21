@@ -14,50 +14,57 @@ Plone 4.0 and up
         ...
         collective.webrichtlijnen
       
+    [instance]
+    recipe = plone.recipe.zope2instance
+    ...
+    zcml =
+        collective.webrichtlijnen
+        collective.webrichtlijnen-overrides
+
 * Re-run buildout, e.g. with::
 
     $ ./bin/buildout
 
 * Start Zope, and in your Plone instance, install `collective.webrichtlijnen`
         
-You can skip the ZCML slug if you are going to explicitly include the package
-from another package's configure.zcml file.
+You can skip the ZCML slug for `collective.webrichtlijnen` (but not for
+`collective.webrichtlijnen-overrides)` if you are going to explicitly include
+the package from another package (your own theme's) `configure.zcml` file::
+
+  <configure
+      xmlns="http://namespaces.zope.org/zope"
+      xmlns:five="http://namespaces.zope.org/five"
+      xmlns:cmf="http://namespaces.zope.org/cmf"
+      xmlns:i18n="http://namespaces.zope.org/i18n"
+      i18n_domain="my.theme">
+
+    <five:registerPackage package="." initialize=".initialize" />
+    <include package="collective.webrichtlijnen" />
+    <include package=".browser" />
+    <include file="skins.zcml" />
+    <include file="profiles.zcml" />
+    <i18n:registerTranslations directory="locales" />
+
+  </configure>
 
 Plone 3
 =======
 
-Although the theme in this python egg is for Plone 4, here are the install
+Although the theme in this Python egg is for Plone 4, here are the install
 instructions for Plone 3.
 
-* Add ``collective.webrichtlijnen`` to the list of eggs to install, e.g.::
+* Do as above for Plone 4
 
-    [buildout]
-    ...
-    eggs =
-        ...
-        Products.PloneTableless
-        collective.webrichtlijnen
+* Add `Products.PloneTableless` to `eggs` in `[buildout]` section
 
-* Tell the plone.recipe.zope2instance recipe to install a ZCML slug::
-
-    [instance]
-    recipe = plone.recipe.zope2instance
-    ...
-    zcml =
-        Products.PloneTableless
-        collective.webrichtlijnen
-        collective.webrichtlijnen-overrides
-
+* Add `Products.PloneTableless` to `zcml` in `[instance]` section
+        
 * Pin down the correct version if you're using Plone 3*::
 
     [versions]
     collective.webrichtlijnen = 1.0.2 # only for Plone 3
 
-* Re-run buildout, e.g. with::
-
-    $ ./bin/buildout
-
-* Start Zope, and in your Plone instance install Plone Tableless
+* Install `Plone Tableless` (ZMI or `prefs_install_products_form`)
 
 Usage with your custom theme
 ============================
